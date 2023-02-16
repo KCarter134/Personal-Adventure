@@ -12,6 +12,12 @@ function Navbar() {
           <Link to="/travel" className="title">
             Travel
           </Link>
+          <Link to="/festivalPage" className="title">
+            Concerts
+          </Link>
+          <Link to="/travelAPI" className="title">
+            travel test
+          </Link>
         </nav>
       </section>
     </header>

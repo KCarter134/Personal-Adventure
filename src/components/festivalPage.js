@@ -1,6 +1,6 @@
 import React from 'react';
 import cityPic from '../assets/pictures/city.jpg'
-import HomepageForm from './homepageForm'
+import FestivalPageForm from './festivalPageForm'
 
 export default function Homepage() {
 
@@ -36,7 +36,7 @@ export default function Homepage() {
         <section className='homepage'>
             <h1 className="web-title"><b>Adventure Finder</b></h1>
             <img src={cityPic}  alt="" className="city-pic"/>
-            <HomepageForm />
+            <FestivalPageForm />
         </section>
             
     );

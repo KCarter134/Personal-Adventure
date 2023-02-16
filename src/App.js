@@ -1,9 +1,10 @@
 import reportWebVitals from './reportWebVitals';
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./components/homepage";
+import FestivalPage from "./components/festivalPage";
+import Home from './components/home'
 import Travel from "./components/travel"
 import Navbar from './components/navbar';
+import TravelAPI from './components/travelAPI'
 import './index.css';
 
 export default function App() {
@@ -13,8 +14,9 @@ export default function App() {
         
         <div className="App">
           <Routes>
-            <Route path="/Personal-Adventure" element={<Homepage />}/>
-            <Route path="/" element={<Homepage />}/>
+            <Route path="/Personal-Adventure" element={<Home />}/>
+            <Route path="/" element={<Home />}/>
+            <Route path="/FestivalPage" element={<FestivalPage />}/>
             <Route path="/travel" element={<Travel />}/>
           </Routes>
         </div>

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+.pic-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.homepic {
+    width: 100%;
+    height: 100%;
+}
+
+.info-module {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    width: 70vw;
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: black;
+    z-index: 1;
+}
+
+.info-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    
+}
+
+.inf-dis {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.inf-dis:hover {
+    background-color: white;
+    color: black;
+}
+
+.front-info {
+    position: relative;
+    z-index: 3;
+    height: 70vh;
+    background-color: black;
+    margin-top: -3px;
+}
+
+@media (max-width: 1500px) {
+
+    .inf-dis {
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 8px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    .info-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+
+    .inf-dis {
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+
+    }
+    
+}
+
+@media (max-width: 300px) {
+
+    .info-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .inf-dis {
+        color: white;
+        font-size: 13px;
+        padding: 15px;
+    }
+    
+}
