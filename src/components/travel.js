@@ -15,7 +15,7 @@ export default function Travel() {
     useEffect(() => {
         fetch('https://developer.nps.gov/api/v1/parks?limit=50&start=0&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd')
             .then((response) => response.json())
-            .then((data) => setData(data))
+            .then((data) => setData(data)) 
                 // let apiData = response.data
                 // let fullNameArr = apiData.map(name => name.fullName)
                 // console.log(fullNameArr)

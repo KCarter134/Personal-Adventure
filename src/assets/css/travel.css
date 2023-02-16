@@ -10,16 +10,17 @@
 
 #travel-option-container {
     display: grid;
-    grid-template-columns: 350px 250px;
-    gap: 100px;
+    grid-template-columns: repeat(3, 30%);
+    gap: 72px;
     position: absolute;
-    top: 12%;
-    right: 10%;
+    top: 50%;
+    right: 50%;
+    transform: translate(47%, -25%);
 }
 
 .travel-option {
-    width: 350px;
-    height: 175px;
+    width: 420px;
+    height: 208px;
     background-color: black;
     border: 1px solid white;
     -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
