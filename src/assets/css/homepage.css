@@ -2,13 +2,6 @@ body {
     margin: 0;
 }
 
-header {
-    height: 40vh;
-    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.6);
-    font-weight: 300;
-    width: 100vw;
-}
-
 .web-title {
     position: absolute;
     top: 25px;
