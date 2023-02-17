@@ -1,43 +1,59 @@
-.mapped-info-cont {
-   background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@1,700&family=Libre+Baskerville&family=Open+Sans:wght@400;700&family=PT+Sans+Narrow&family=Source+Code+Pro:wght@600&display=swap');
+
+section {
+    font-family: 'Abel', sans-serif;
 }
 
-.mapped-info-inner li {
-    list-style-type: none;
-    border: 1px solid black;
-    width: 300px;
-    margin-top: 30px;
-    padding: 7px;
+.mapped-info-cont {
+   background-color: black;
+   text-align: center;
 }
+
 .mapped-info-inner {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    background-color: white;
-    gap: 35px;
+    box-shadow: inset 2px 2px 10px 0 black;
+    background-color: rgb(255, 255, 255);
+    gap: 15px;
     justify-content: center;
-    margin-top: 55vh;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 55vh;
     z-index: 3;
     border: 4px solid black;
+    overflow: hidden;
+}
 
+.mapped-info-inner li {
+    margin-left: 7px;
+    margin-right: 7px;
+    list-style-type: none;
+    border: 4px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 17vw;
+    height: 600px;
+    margin-top: 30px;
+    padding: 7px;
+    overflow: auto;
 }
 
 .container-pic {
-    width: 300px;
+    width: 380px;
     height: 200px;
 }
 
-.park-name{
+.card-name{
     text-align: center;
     padding: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     height: 60px;
 }
-.park-desc {
+.card-desc {
     margin-top: 20px;
+    height: 20%;
 }
 
 .address-city {
@@ -49,9 +65,10 @@
 .physical-address {
     text-align: center;
     padding-bottom: 20px;
+    height: 30px;
 }
 
-.park-url {
+.card-url {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -59,12 +76,29 @@
     font-weight: 600;
 }
 
-.park-pic {
+.card-pic {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 1;
     width: 100vw;
     height: 72vh;
+}
+
+.urlBtn {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    transform: translate(50%);
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.urlBtn:hover {
+    animation: input scale(1.2);
 }
 
 .page-nav-wrap {
@@ -76,10 +110,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%;
-    padding-top: 50px;
+    padding-top: 23px;
     background-color: black;
-    border-top-right-radius: 200px;
-    border-top-left-radius: 200px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
 .page-nav {
@@ -92,6 +126,11 @@
 .nav {
     text-decoration: none;
     color: white;
+    margin-bottom: 10px;
+}
+
+.in-use {
+    display: none;
 }
 
 .nav:hover {
@@ -103,12 +142,11 @@
 
     .mapped-info-inner li {
         list-style-type: none;
-        border: 1px solid black;
         width: 23vw;
         height: 40vh;
         margin-top: 30px;
-        padding: 7px;
-        overflow: hidden;
+        margin-left: 7px;
+        overflow: auto;
     }
 
     .mapped-info-inner {
@@ -116,6 +154,7 @@
         gap: 35px;
         margin-left: 5%;
         margin-right: 5%;
+        overflow: hidden;
     }
 
     .container-pic {
@@ -123,13 +162,13 @@
         height: 150px;
     }
 
-    .park-name{
+    .card-title{
         padding: 5px;
         font-size: 15px;
         height: 50px;
     }
 
-    .park-desc {
+    .card-desc {
         font-size: 10px;
     }
     
@@ -137,21 +176,24 @@
         font-size: 12px;
     }
     
-    .park-url {
-        margin: 5%;
-        font-size: 10px;
+    .card-url {
+        font-size: 14px;
+        margin-top: 6px;
     }
-    
-    .physical-address {
+    .physical-addrecard {
         text-align: center;
         padding-bottom: 5px;
+    }
+
+    .urlBtn {
+        margin-top: 0;
     }
 }
 
 @media (max-width: 700px) {
     .mapped-info-inner li {
+        margin-left: -7px;
         list-style-type: none;
-        border: 2px solid black;
         width: 30vw;
         overflow: hidden;
     }
@@ -168,13 +210,13 @@
         height: 150px;
     }
 
-    .park-name{
+    .card-name{
         padding: 5px;
         font-size: 15px;
         height: 50px;
     }
 
-    .park-desc {
+    .card-desc {
         font-size: 10px;
     }
     
@@ -182,7 +224,7 @@
         font-size: 12px;
     }
     
-    .park-url {
+    .card-url {
         margin: 5%;
         font-size: 10px;
     }
@@ -191,4 +233,68 @@
         text-align: center;
         padding-bottom: 5px;
     }
+
+    .urlBtn {
+        margin-top: 0;
+    }
+
+    .nav {
+        font-size: 5vw;
+    }
 }
+
+@media (max-width: 500px) {
+    .mapped-info-inner li {
+        list-style-type: none;
+        width: 60vw;
+        height: 32vh;
+        transform: translateX(18%);
+    }
+
+    .mapped-info-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-pic {
+        width: 60vw;
+        height: 150px;
+    }
+
+    .card-name{
+        padding: 5px;
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .card-desc {
+        font-size: 10px;
+        display: none;
+    }
+    
+    .address-city {
+        font-size: 12px;
+    }
+    
+    .card-url {
+        margin-left: -3%;
+        font-size: 11px;
+    }
+
+    .urlBtn {
+        margin-top: 0;
+    }
+
+    .nav {
+        font-size: 20px;
+        border-bottom: 4px solid black;
+        height: 23px;
+    }
+
+    .page-nav-wrap {
+        background-color: transparent;
+        top: 50vh;
+        border: none;
+
+    }
+} 

@@ -3,7 +3,6 @@
     top: 4vh;
     right: 4vw;
     transform:translateY(-50%);
-    width: 100vw;
     display: flex;
     justify-content: right;
     z-index: 999;
@@ -37,11 +36,25 @@
     .navbar {
         display: flex;
         justify-content: center;
-        margin-right: 0;
     }
 
     .title {
         font-size: 25px;
+        font-weight: 600;
+        color: white;
+        border: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 16px;
         font-weight: 600;
         color: white;
         border: none;

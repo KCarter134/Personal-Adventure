@@ -13,14 +13,6 @@ import parkTourPic from "../assets/pictures/parkTourPic.jpg"
 
 function Travel() {
 
-    //https:developer.nps.gov/api/v1/parks?limit=50&start=0&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd
-    // let apiData = response.data
-                // let fullNameArr = apiData.map(name => name.fullName)
-                // console.log(fullNameArr)
-                // console.log(response.data)
-                // return fullNameArr;
-
-
     return (
         <section className='travel-main'>
             <img src={mountainPic} alt="" className='mountainPic' />
@@ -33,22 +25,22 @@ function Travel() {
                     <img src={campPic} alt='' className='travel-pic' />
                     <div className='travel-picture-text camping-text'>Camping</div>
                 </Link>
-                <div className='travel-option events'>
+                <Link to="/TravelEvents" className='travel-option events'>
                     <img src={parkEvents} alt='' className='travel-pic' />
                     <div className='travel-picture-text events-text'>Events</div>
-                </div>
-                <div className='travel-option something1'>
+                </Link>
+                <Link to="/TravelPlaces" className='travel-option something1'>
                     <img src={placesPic} alt='' className='travel-pic' />
                     <div className='travel-picture-text places-text'>Places</div>
-                </div>
-                <div className='travel-option something2'>
+                </Link>
+                <Link className='travel-option something2'>
                     <img src={activitiesPic} alt='' className='travel-pic' />
-                    <div className='travel-picture-text activites-text'>Activities</div>
-                </div>
-                <div className='travel-option something3'>
+                    <div className='travel-picture-text activites-text'>People</div>
+                </Link>
+                <Link className='travel-option something3'>
                     <img src={parkTourPic} alt='' className='travel-pic' />
                     <div className='travel-picture-text tours-text'>Tours</div>
-                </div>
+                </Link>
             </div>
         </section>
     );

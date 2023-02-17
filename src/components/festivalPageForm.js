@@ -7,6 +7,7 @@ const HomepageForm = props => {
     const handleClick = (e) => { //sends user input to console
         e.preventDefault();
         console.log(textInput);
+        return textInput[e];
         // props.send(textInput); 
         // ------- WILL NEED THIS TO WORK LATER TO SEND USER INPUT INTO API CALL --------
        
