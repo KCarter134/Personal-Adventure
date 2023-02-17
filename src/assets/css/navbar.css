@@ -6,6 +6,7 @@
     width: 100vw;
     display: flex;
     justify-content: right;
+    z-index: 999;
 
 }
 

@@ -5,6 +5,8 @@ import Home from './components/home'
 import Travel from "./components/travel"
 import Navbar from './components/navbar';
 import TravelAPI from './components/travelAPI'
+import TravelParks from './components/travelParks'
+import TravelCamping from './components/travelCamping'
 import './index.css';
 
 export default function App() {
@@ -18,6 +20,8 @@ export default function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/FestivalPage" element={<FestivalPage />}/>
             <Route path="/travel" element={<Travel />}/>
+            <Route path='/travelParks' element={<TravelParks />} />
+            <Route path='/travelCamping' element={<TravelCamping />} />
           </Routes>
         </div>
         </>

@@ -1,0 +1,194 @@
+.mapped-info-cont {
+   background-color: black;
+}
+
+.mapped-info-inner li {
+    list-style-type: none;
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 30px;
+    padding: 7px;
+}
+.mapped-info-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    background-color: white;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 55vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 3;
+    border: 4px solid black;
+
+}
+
+.container-pic {
+    width: 300px;
+    height: 200px;
+}
+
+.park-name{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    height: 60px;
+}
+.park-desc {
+    margin-top: 20px;
+}
+
+.address-city {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.physical-address {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.park-url {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 10%;
+    font-weight: 600;
+}
+
+.park-pic {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 72vh;
+}
+
+.page-nav-wrap {
+    position: absolute;
+    z-index: 999;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    padding-top: 50px;
+    background-color: black;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    font-size: 30px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+}
+
+.nav:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+@media (max-width: 1500px) {
+
+    .mapped-info-inner li {
+        list-style-type: none;
+        border: 1px solid black;
+        width: 23vw;
+        height: 40vh;
+        margin-top: 30px;
+        padding: 7px;
+        overflow: hidden;
+    }
+
+    .mapped-info-inner {
+        grid-template-columns: repeat(3, 30%);
+        gap: 35px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .container-pic {
+        width: 23vw;
+        height: 150px;
+    }
+
+    .park-name{
+        padding: 5px;
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .park-desc {
+        font-size: 10px;
+    }
+    
+    .address-city {
+        font-size: 12px;
+    }
+    
+    .park-url {
+        margin: 5%;
+        font-size: 10px;
+    }
+    
+    .physical-address {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mapped-info-inner li {
+        list-style-type: none;
+        border: 2px solid black;
+        width: 30vw;
+        overflow: hidden;
+    }
+
+    .mapped-info-inner {
+        grid-template-columns: repeat(2, 38%);
+        gap: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .container-pic {
+        width: 30vw;
+        height: 150px;
+    }
+
+    .park-name{
+        padding: 5px;
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .park-desc {
+        font-size: 10px;
+    }
+    
+    .address-city {
+        font-size: 12px;
+    }
+    
+    .park-url {
+        margin: 5%;
+        font-size: 10px;
+    }
+    
+    .physical-address {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}

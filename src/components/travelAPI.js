@@ -1,34 +1,58 @@
 // TO DO: Take api fetch out of TRAVEL.JS and use this 
 // file for all travel related API calls 
 
+// import React, { useEffect, useState } from 'react';
 
-// import React, { Component } from 'react';
-// import mountainPic from '../assets/pictures/mountain.jpg'
-// import parkPic from "../assets/pictures/park.jpg"
-// import campPic from "../assets/pictures/camping.jpg"
-// import parkEvents from "../assets/pictures/parkEvents.jpg"
-// import placesPic from "../assets/pictures/placesPic.jpg"
-// import activitiesPic from "../assets/pictures/activitiesPic.jpg"
-// import parkTourPic from "../assets/pictures/parkTourPic.jpg"
+// function TravelAPI() {
+
+   
+    //https:developer.nps.gov/api/v1/parks?limit=50&start=0&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd
+    // let apiData = response.data
+                // let fullNameArr = apiData.map(name => name.fullName)
+                // console.log(fullNameArr)
+                // console.log(response.data)
+                // return fullNameArr;
 
 
-// class Travel extends Component {
-//     const [data, setData] = useState(null)
 
-//     useEffect(() => {
-//         fetch("https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd")
-//             .then((res) => res.json())
-//             .then((data) => setData(data))
-//     })
-    
-//     render () {
-//     return (
-//         <section className='travel-main'>
-//             <img src={mountainPic} alt="" className='mountainPic' />
+                
+//                 const [error, setError] = useState(null);
+//                 const [isLoaded, setIsLoaded] = useState(false);
+                
 
-//             <div>{this.state.id}</div>
-//         </section>
-//         );
-//     }
-// }
-// export default Travel ;
+//   parkData = () => {
+//     const [data, setItems] = useState([]);
+//         fetch("https:developer.nps.gov/api/v1/parks?limit=50&start=0&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd")
+//             .then(res => res.json())
+//             .then((result) => {
+//                 setIsLoaded(true);
+//                 setItems(result.data);
+//             },
+//             (error) => {
+//                 setIsLoaded(true);
+//                 setError(error);
+//             } 
+//             )
+//             return data
+//         }, 
+
+
+//  placeData = (data) => {
+
+//         fetch("https:developer.nps.gov/api/v1/places?limit=50&start=0&api_key=8w91BhYJTMpXTIMCgectXocGhMCToXrslPKdoQwd")
+//             .then(res => res.json())
+//             .then((result) => {
+//                 setIsLoaded(true);
+//                 setItems(result.data);
+//                 console.log(result.data)
+//             },
+//             (error) => {
+//                 setIsLoaded(true);
+//                 setError(error);
+//             } 
+//             )
+//             return data
+
+//         }
+
+
