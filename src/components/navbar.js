@@ -15,9 +15,6 @@ function Navbar() {
           <Link to="/festivalPage" className="title">
             Concerts
           </Link>
-          <Link to="/travelAPI" className="title">
-            travel test
-          </Link>
         </nav>
       </section>
     </header>
